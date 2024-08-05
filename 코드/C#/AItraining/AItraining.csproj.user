@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AISEARCH.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GRP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="JOIN.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RESULT.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="START.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AISEARCH.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GRP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="JOIN.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RESULT.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="START.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

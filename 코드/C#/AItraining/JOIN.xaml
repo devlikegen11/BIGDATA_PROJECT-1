@@ -1,0 +1,108 @@
+﻿<Page x:Class="AItraining.JOIN"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AItraining"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="500"
+      Title="JOIN">
+
+    <Grid Background="White">
+
+        <Label Content=" 회원가입 화면" HorizontalAlignment="Center" Height="50" VerticalAlignment="Top" Width="500" FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center" Background="#FFBED7DC" FontFamily="Hancom MalangMalang Bold"/>
+        <Label Content="ID   :" HorizontalAlignment="Left" Height="38" Margin="54,65,0,0" VerticalAlignment="Top" Width="114" FontSize="20" FontWeight="Bold" FontFamily="Hancom MalangMalang Bold"/>
+        <Label Content="PW  :" HorizontalAlignment="Left" Height="38" Margin="54,137,0,0" VerticalAlignment="Top" Width="114" FontSize="20" FontWeight="Bold" FontFamily="Hancom MalangMalang Bold"/>
+        <TextBox x:Name="ID_BOX" HorizontalAlignment="Left" Height="38" Margin="173,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" FontFamily="Hancom MalangMalang Bold" BorderBrush="#FFABADB3">
+            <TextBox.Resources>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="1"
+                            CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost"
+                                      HorizontalAlignment="Stretch"
+                                      VerticalAlignment="Stretch"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <TextBox x:Name="PW_BOX" HorizontalAlignment="Left" Height="38" Margin="173,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Hancom MalangMalang Bold" BorderBrush="#FFABADB3">
+            <TextBox.Resources>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="1"
+                            CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost"
+                                      HorizontalAlignment="Stretch"
+                                      VerticalAlignment="Stretch"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="사원번호 :" HorizontalAlignment="Left" Height="38" Margin="54,273,0,0" VerticalAlignment="Top" Width="114" FontSize="20" FontWeight="Bold" FontFamily="Hancom MalangMalang Bold"/>
+        <TextBox x:Name="PER_NUM" HorizontalAlignment="Left" Height="38" Margin="173,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Hancom MalangMalang Bold" BorderBrush="#FFABADB3">
+            <TextBox.Resources>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="1"
+                            CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost"
+                                      HorizontalAlignment="Stretch"
+                                      VerticalAlignment="Stretch"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Button Content="회원가입" HorizontalAlignment="Left" Height="45" Margin="111,343,0,0" VerticalAlignment="Top" Width="262" Background="#FF51829B" FontSize="20" Click="Button_Click" FontFamily="Hancom MalangMalang Bold" Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="PW확인  :" HorizontalAlignment="Left" Height="38" Margin="54,205,0,0" VerticalAlignment="Top" Width="114" FontSize="20" FontWeight="Bold" FontFamily="Hancom MalangMalang Bold"/>
+        <TextBox x:Name="PW_CHECK" HorizontalAlignment="Left" Height="38" Margin="173,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Hancom MalangMalang Bold" BorderBrush="#FFABADB3">
+            <TextBox.Resources>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="1"
+                            CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost"
+                                      HorizontalAlignment="Stretch"
+                                      VerticalAlignment="Stretch"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="" HorizontalAlignment="Center" Height="42" VerticalAlignment="Top" Width="500" FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center" Background="#FFBED7DC" FontFamily="Hancom MalangMalang Bold" Margin="0,408,0,0"/>
+
+    </Grid>
+</Page>
